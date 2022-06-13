@@ -65,6 +65,9 @@
         <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, processorArchitecture=Amd64">
           <HintPath>..\packages\EXILED.5.2.1\lib\net472\Exiled.Updater.dll</HintPath>
         </Reference>
+        <Reference Include="MapEditorReborn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\Desktop\EXILED VISUAL STUDIO\EXILED 5\5.1.0\MapEditorReborn.dll</HintPath>
+        </Reference>
         <Reference Include="NorthwoodLib, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
           <HintPath>..\packages\EXILED.5.2.1\lib\net472\NorthwoodLib.dll</HintPath>
         </Reference>
@@ -75,6 +78,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Config.cs" />
+        <Compile Include="EventHandlers.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
