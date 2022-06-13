@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3ko8nQ+SOA1+9LqnQVGfmXRa9E1rldq5ccPBCK2vMVo=",
+  "Source": "Gala.Backend",
+  "BasePath": "_content/Gala.Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
