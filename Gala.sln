@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gala.Backend", "Gala.Backend\Gala.Backend.csproj", "{FBB2BDE5-1DEA-421A-9A49-41890AC8194A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gala.Plugin", "Gala.Plugin\Gala.Plugin.csproj", "{664914D7-978C-4A62-8114-50638DED4E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gala.Shared", "Gala.Shared\Gala.Shared.csproj", "{19002754-86FE-4725-B03C-8AB79A198A8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB2BDE5-1DEA-421A-9A49-41890AC8194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB2BDE5-1DEA-421A-9A49-41890AC8194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB2BDE5-1DEA-421A-9A49-41890AC8194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB2BDE5-1DEA-421A-9A49-41890AC8194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664914D7-978C-4A62-8114-50638DED4E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664914D7-978C-4A62-8114-50638DED4E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664914D7-978C-4A62-8114-50638DED4E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664914D7-978C-4A62-8114-50638DED4E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19002754-86FE-4725-B03C-8AB79A198A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19002754-86FE-4725-B03C-8AB79A198A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19002754-86FE-4725-B03C-8AB79A198A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19002754-86FE-4725-B03C-8AB79A198A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
