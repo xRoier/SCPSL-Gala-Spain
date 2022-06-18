@@ -1,5 +1,8 @@
 using Discord.WebSocket;
 using Gala.Backend.Bot;
+using Gala.Backend;
+using Gala.Shared.Interfaces;
+using LiteDB;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +14,12 @@ builder.Logging.ClearProviders();
 var logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
 builder.Logging.AddSerilog(logger);
 builder.Services.AddSingleton(logger);
+builder.Services.AddSingleton<Static>();
+var litedb = new LiteDatabase("sync.db");
+litedb.GetCollection<SynchronizedUser>().EnsureIndex(x => x.DiscordId);
+litedb.GetCollection<SyncChallenge>().EnsureIndex(x => x.DiscordId);
+builder.Services.AddSingleton(litedb);
+builder.Services.AddSingleton<Database>();
 builder.Services.AddSingleton<DiscordSocketClient>();
 builder.Services.AddHostedService<DiscordClientService>();
 var app = builder.Build();
