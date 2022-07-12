@@ -1,0 +1,65 @@
+% Inspirada por http://karenandjustin.blogspot.ca/2009/03/latex-wedding-invitation-howto.html
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.fractals}
+
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage{setspace}
+\usepackage[papersize={10cm,15cm},hmargin=0cm,vmargin={1cm,1cm}]{geometry}
+\usepackage{afterpage}
+
+\newcommand{\fancy}{\calligra\small}
+\newcommand{\block}{\sc\scriptsize}
+
+
+
+\pagestyle{empty}
+
+\begin{document}
+	\topskip0pt
+	\vspace*{\fill}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw (-3.5,0) -- (3.5,0);
+		
+		\end{tikzpicture}
+		
+		\vspace{-0.5\baselineskip}
+		
+		%rollo inicial
+		
+		\begin{singlespacing}
+			{\fancy Estimado}\\
+		\end{singlespacing}
+		
+		\begin{onehalfspacing}
+			{\block DrJamón} \\
+		\end{onehalfspacing}
+		
+		\begin{singlespacing}
+			{\fancy Ha sido invitado  \\ a la gala de Premios \\ como invitado importante \\ por algo algo algo algo} \\ 
+		\end{singlespacing}
+		
+		
+		
+		% fecha y hora
+		\begin{singlespacing}
+			{\fancy El } {\block Sábado, Treinta de Julio}\\
+			{\block Dos mil ventidos}\\
+			{\fancy A las} {\block 5 de la Tarde}\\
+			{\block Teatro Teatro}\\
+			\vspace{0.5\baselineskip}
+			{\fancy Esperamos su asistencia}\\
+			
+			\vspace{0.5\baselineskip}
+		\end{singlespacing}
+
+		\begin{tikzpicture}	
+			\draw (-3.5,0) -- (3.5,0);
+		\end{tikzpicture}
+	
+
+	\end{center}
+	\vspace*{\fill}
+\end{document}
