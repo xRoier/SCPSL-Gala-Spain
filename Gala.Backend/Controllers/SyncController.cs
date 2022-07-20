@@ -25,7 +25,7 @@ public class SyncController : ControllerBase
     public ActionResult<SynchronizedUser> GetUser(string id)
     {
         if (!Request.Headers.TryGetValue(HeaderNames.Authorization, out var token) || token != _configuration["Auth:Api"])
-            return Forbid();
+            return StatusCode(403);
         if (!ulong.TryParse(id, out var userId))
             return BadRequest();
         return Ok(_database.GetSyncUser(userId));
@@ -35,7 +35,7 @@ public class SyncController : ControllerBase
     public ActionResult CreateUser(string hash, string steamid)
     {
         if (!Request.Headers.TryGetValue(HeaderNames.Authorization, out var token) || token != _configuration["Auth:Api"])
-            return Forbid();
+            return StatusCode(403);
         if (!ulong.TryParse(steamid.Remove(steamid.IndexOf('@')), out var steamId))
             return BadRequest();
         var challenge = _database.GetSyncChallenge(hash);
